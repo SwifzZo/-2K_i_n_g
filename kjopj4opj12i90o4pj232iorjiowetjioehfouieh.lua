@@ -37,7 +37,7 @@ local TimeGlobal = "TIME | "..os.date("%H")..":"..os.date("%M")..":"..os.date("%
 print("Ping:"..Ping.."FPS:"..Fps.. "    ")
 print("User " ..UserPy.. "#" ..tag.. "  ใช้งานเมื่อ" ..TimeGlobal.. "   Hour : "..Hour.." Minute : "..Minute.." Second : "..Second.. " " )
 print(UserPy)
-_G.MrMaxNaJaBuy = true
+
 --local Levelplayer = game:GetService("Players").LocalPlayer.PlayerStats.lvl.Value
 --local tag = tostring(math.random(0001, 9999))
 --local GameTime = math.floor(workspace.DistributedGameTime+0.5)
@@ -82,7 +82,7 @@ end
 
 if _G.MrMaxNaJaBuy == true then
     local UserPy = game.Players.LocalPlayer.Name
-    local url = "https://discord.com/api/webhooks/1355157597136883753/7tZCThvT3gbazr2MjoCAoHMotVcaHcWvC6H3J0fWDYJTAwDzN9y8eaBxxGr1kjLGkzrj" -- ur webhook url
+    local url = "https://discord.com/api/webhooks/1231651589262147615/FxKk6HOjS2j_MlQ6A2hirgWbzVAaY41FO5Xiw8LcM7StmBaCVu3HWzdJpQdkqe5B8Is2" -- ur webhook url
     local data = { 
         ["username"] = 'MrMaxNaJa', -- Webhook name here
         ["avatar_url"] = "https://cdn.discordapp.com/attachments/948603231192363058/1088077196997955704/Untitled-1_copy.png", -- ur discord logo url
@@ -94,7 +94,7 @@ if _G.MrMaxNaJaBuy == true then
                 ["fields"] =  {
                     {
                         ["name"] = "[📁] **ชื่อผู้ใช้เติม**",
-                        ["value"] = 'ชื่อผู้ใช้เติม : ' ..UserPy ,
+                        ["value"] = 'ชื่อผู้ใช้เติม : ' ..UserPy..'\n Key User : \n ```lua\n["'.._G.register_key..'"]\n```',
                     }
                     
                 },
